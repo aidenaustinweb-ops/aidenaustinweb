@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Aiden & Austin Watches | Luxury Watch Showroom in Wayanad</title>
+  <meta name="description" content="Discover premium watch collections, professional servicing, and perfumes at Aiden & Austin Watches, Pulpally and Modern Radios, Mananthavady, Wayanad. The ultimate luxury destination.">
+  <meta name="keywords" content="Luxury Watches Wayanad, Watch repair Pulpally, Aiden Austin Wayanad, Casio Wayanad, Titan Pulpally, Watch showroom Kerala, Smartwatches Wayanad, Modern Radios Mananthavady, Perfumes Pulpally">
+  <link rel="canonical" href="https://aidenandaustinwatches.com">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aiden & Austin Watches | Luxury Showroom">
+  <meta property="og:description" content="Premium watch collections and expert horology service in Pulpally & Mananthavady, Wayanad.">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:url" content="https://aidenandaustinwatches.com">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aiden & Austin Watches">
+  <meta name="twitter:description" content="Luxury watch showroom and expert repairs in Wayanad.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WatchStore",
+        "@id": "https://aidenandaustinwatches.com/#showroom-pulpally",
+        "name": "Aiden & Austin Watches",
+        "description": "Premium watches, smartwatches, clocks & accessories in Pulpally, Wayanad.",
+        "url": "https://aidenandaustinwatches.com",
+        "telephone": "+919207166135",
+        "image": "https://aidenandaustinwatches.com/assets/images/logo.png",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Near Canara Bank, Pulpally",
+          "addressLocality": "Wayanad",
+          "addressRegion": "Kerala",
+          "postalCode": "673579",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "11.7924",
+          "longitude": "76.1558"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:30"
+        }
+      },
+      {
+        "@type": "WatchStore",
+        "@id": "https://aidenandaustinwatches.com/#showroom-mananthavady",
+        "name": "Modern Radios",
+        "description": "Heritage watch, clock, and electronics flagship branch serving customers since 1967 in Mananthavady, Wayanad.",
+        "url": "https://aidenandaustinwatches.com",
+        "telephone": "+919207166135",
+        "image": "https://aidenandaustinwatches.com/assets/images/logo.png",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calicut Road, Mananthavady",
+          "addressLocality": "Wayanad",
+          "addressRegion": "Kerala",
+          "postalCode": "670645",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:30"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Trailing Cursor -->
+  <div class="custom-cursor" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Loading Screen Overlay -->
+  <div id="loader-overlay">
+    <div class="loader-container">
+      <canvas id="loader-canvas"></canvas>
+      <div class="loader-brand">
+        <img src="assets/images/logo.png" alt="Aiden & Austin Watches" class="loader-logo-img">
+        <div class="loader-sub">Aiden & Austin</div>
+      </div>
+    </div>
+    <div class="loader-progress" id="loader-percentage">00%</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <img src="assets/images/logo.png" alt="Aiden & Austin Watches" class="nav-logo-img">
+      </a>
+      
+      <button class="nav-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#locations">Showrooms</a></li>
+        <li class="mobile-menu-socials">
+          <div class="mobile-socials-wrap">
+            <a href="https://www.facebook.com/share/1B6WhCLJtP/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/aidenandaustin_?igsh=bnZ1cjFldmVtM3Rt" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/919207166135" target="_blank" aria-label="WhatsApp">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="nav-cta">
+        <div class="magnetic-btn-wrap">
+          <a href="#contact" class="btn btn-outline magnetic-btn" id="nav-inquire-btn">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content -->
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- ==========================================
+           1. HERO SECTION
+           ========================================== -->
+      <section id="hero">
+        <div class="hero-bg">
+          <div class="hero-video-fallback">
+            <canvas id="hero-particle-canvas"></canvas>
+          </div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-headline reveal-text" id="hero-title">
+            <span>TIMELESS STYLE.</span>
+            <span>TRUSTED QUALITY.</span>
+          </h1>
+          
+          <p class="hero-subheadline reveal-text-opacity" style="transition-delay: 0.2s; margin-top: 1.5rem; margin-bottom: 3.5rem; display: block;">Premium Watches, Smart Watches, Clocks &amp; Accessories Since 1967.</p>
+          
+          <div class="hero-actions reveal-text-opacity" style="transition-delay: 0.4s;">
+            <div class="magnetic-btn-wrap">
+              <a href="#featured-brands" class="btn btn-primary magnetic-btn" id="hero-btn-explore">Explore Collection</a>
+            </div>
+            <div class="magnetic-btn-wrap">
+              <a href="#locations" class="btn btn-outline magnetic-btn" id="hero-btn-stores">Visit Showroom</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           2. CINEMATIC WATCH EXPERIENCE (Scroll-driven)
+           ========================================== -->
+      <section id="cinematic-experience">
+        <!-- Canvas container pinned during scroll sequence -->
+        <div class="cinematic-canvas-container" id="canvas-pin">
+          <canvas id="cinematic-canvas"></canvas>
+        </div>
+
+        <!-- Scroll Scenes -->
+        <!-- Scene 01 -->
+        <div class="cinematic-scene-container scene-left" id="scene-01">
+          <div class="cinematic-content">
+            <h2 class="cinematic-title reveal-text-opacity">Titan Craftsmanship</h2>
+            <p class="cinematic-desc reveal-text-opacity">A premium Titan watch slowly emerges from darkness, displaying subtle metallic reflections and floating gold particles.</p>
+          </div>
+        </div>
+
+        <!-- Scene 02 -->
+        <div class="cinematic-scene-container scene-right" id="scene-02">
+          <div class="cinematic-content">
+            <h2 class="cinematic-title reveal-text-opacity">Cinematic Macro Zoom</h2>
+            <p class="cinematic-desc reveal-text-opacity">Glide closer to examine the custom dial, polished crown, matte casing, and premium strap details.</p>
+          </div>
+        </div>
+
+        <!-- Scene 03 -->
+        <div class="cinematic-scene-container" id="scene-03">
+          <div class="cinematic-content">
+            <h2 class="cinematic-title reveal-text-opacity">Mechanical Movement</h2>
+            <p class="cinematic-desc reveal-text-opacity">Watch components open, revealing the intricate rotating gears and high-precision mechanical engineering inside.</p>
+          </div>
+        </div>
+
+        <!-- Scene 04 -->
+        <div class="cinematic-scene-container scene-left" id="scene-04">
+          <div class="cinematic-content">
+            <h2 class="cinematic-title reveal-text-opacity">Immersive Engineering</h2>
+            <p class="cinematic-desc reveal-text-opacity">Move through the components of the mechanical movement, highlighted by luxurious golden reflections.</p>
+          </div>
+        </div>
+
+        <!-- Scene 05 -->
+        <div class="cinematic-scene-container scene-right" id="scene-05">
+          <div class="cinematic-content">
+            <h2 class="cinematic-title reveal-text-opacity">Reassembled Masterpiece</h2>
+            <p class="cinematic-desc reveal-text-opacity">All pieces align and snap back together as a premium gold sweep plays across the face.</p>
+          </div>
+        </div>
+
+        <!-- Scene 06 -->
+        <div class="cinematic-scene-container" id="scene-06">
+          <div class="cinematic-content">
+            <h2 class="cinematic-title reveal-text-opacity">Timeless Legacy</h2>
+            <p class="cinematic-desc reveal-text-opacity">The completed masterpiece rotates slowly and transitions into our featured brand showcase.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           3. FEATURED WATCH BRANDS
+           ========================================== -->
+      <section id="featured-brands">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Heritage</span>
+          <h2 class="section-title reveal-text-opacity">Featured Watch Brands</h2>
+          <p class="section-subtitle reveal-text-opacity" style="max-width: 600px; margin-bottom: 4rem; color: var(--gray-text);">Explore trusted watch brands known for quality, style, innovation, and timeless craftsmanship.</p>
+          
+          <div class="grid grid-3 brands-featured-grid">
+            <!-- Titan -->
+            <div class="glass-card brand-card reveal-text-opacity" id="feat-brand-titan">
+              <div class="brand-bg-image" style="background-image: url('assets/images/titan_collection.webp');"></div>
+              <div class="brand-card-content">
+                <h3 class="brand-card-name">Titan</h3>
+                <p class="brand-card-desc">Timeless Indian craftsmanship with elegant styling for every occasion.</p>
+              </div>
+            </div>
+            
+            <!-- Timex -->
+            <div class="glass-card brand-card reveal-text-opacity" id="feat-brand-timex">
+              <div class="brand-bg-image" style="background-image: url('assets/images/timex_collection.webp');"></div>
+              <div class="brand-card-content">
+                <h3 class="brand-card-name">Timex</h3>
+                <p class="brand-card-desc">Classic American durability and mechanical innovation since 1854.</p>
+              </div>
+            </div>
+
+            <!-- Fastrack -->
+            <div class="glass-card brand-card reveal-text-opacity" id="feat-brand-fastrack">
+              <div class="brand-bg-image" style="background-image: url('assets/images/showcase_mens.webp');"></div>
+              <div class="brand-card-content">
+                <h3 class="brand-card-name">Fastrack</h3>
+                <p class="brand-card-desc">Vibrant, bold designs representing the youthful spirit and active energy.</p>
+              </div>
+            </div>
+
+            <!-- Sonata -->
+            <div class="glass-card brand-card reveal-text-opacity" id="feat-brand-sonata">
+              <div class="brand-bg-image" style="background-image: url('assets/images/showcase_womens.webp');"></div>
+              <div class="brand-card-content">
+                <h3 class="brand-card-name">Sonata</h3>
+                <p class="brand-card-desc">Reliable style and trust, bringing celebrations to life for everyone.</p>
+              </div>
+            </div>
+
+            <!-- Raga -->
+            <div class="glass-card brand-card reveal-text-opacity" id="feat-brand-raga">
+              <div class="brand-bg-image" style="background-image: url('assets/images/showcase_womens.webp');"></div>
+              <div class="brand-card-content">
+                <h3 class="brand-card-name">Raga</h3>
+                <p class="brand-card-desc">Exquisite jewelry timepieces designed for the modern expressive woman.</p>
+              </div>
+            </div>
+
+            <!-- Casio -->
+            <div class="glass-card brand-card reveal-text-opacity" id="feat-brand-casio">
+              <div class="brand-bg-image" style="background-image: url('assets/images/casio_collection.webp');"></div>
+              <div class="brand-card-content">
+                <h3 class="brand-card-name">Casio</h3>
+                <p class="brand-card-desc">Japanese engineering precision, durability, and classic digital style.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           4. INTERNATIONAL WATCH COLLECTION
+           ========================================== -->
+      <section id="international-brands" style="background-color: #000000; position: relative;">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity" style="color: var(--gold);">Global Luxury</span>
+          <h2 class="section-title reveal-text-opacity">International Watch Collection</h2>
+          <p class="section-subtitle reveal-text-opacity" style="max-width: 600px; margin-bottom: 4rem; color: var(--gray-text);">Discover globally recognized fashion and lifestyle watch brands.</p>
+          
+          <div class="grid grid-3 international-grid">
+            <!-- Police -->
+            <div class="intl-card reveal-text-opacity" id="intl-brand-police">
+              <div class="intl-bg-image" style="background-image: url('assets/images/police_watch.webp');"></div>
+              <div class="intl-card-border"></div>
+              <div class="intl-card-content">
+                <h3 class="intl-brand-name">Police</h3>
+                <span class="intl-brand-meta">Urban &amp; Rebellious Style</span>
+                <p class="intl-brand-desc">Italian fashion watch design, featuring bold street-style aesthetics and large mechanical dials.</p>
+              </div>
+            </div>
+            
+            <!-- Tommy Hilfiger -->
+            <div class="intl-card reveal-text-opacity" id="intl-brand-tommy">
+              <div class="intl-bg-image" style="background-image: url('assets/images/tommy_watch.webp');"></div>
+              <div class="intl-card-border"></div>
+              <div class="intl-card-content">
+                <h3 class="intl-brand-name">Tommy Hilfiger</h3>
+                <span class="intl-brand-meta">Classic American Cool</span>
+                <p class="intl-brand-desc">Preppy style meets classic watch styling. Refined chronographs with iconic flag details.</p>
+              </div>
+            </div>
+
+            <!-- Kenneth Cole -->
+            <div class="intl-card reveal-text-opacity" id="intl-brand-kenneth">
+              <div class="intl-bg-image" style="background-image: url('assets/images/kenneth_cole_watch.webp');"></div>
+              <div class="intl-card-border"></div>
+              <div class="intl-card-content">
+                <h3 class="intl-brand-name">Kenneth Cole</h3>
+                <span class="intl-brand-meta">New York Modernity</span>
+                <p class="intl-brand-desc">Sleek skeleton watch movements and clean indices representing sophisticated metropolitan fashion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           4.5 HERITAGE STORY & CRAFTSMANSHIP
+           ========================================== -->
+      <section id="story">
+        <div class="container">
+          <div class="story-layout">
+            <!-- Left Column: Premium Collage -->
+            <div class="story-collage-col">
+              <div class="story-collage">
+                <div class="reveal-img-container story-collage-img img-1">
+                  <img src="assets/images/heritage_mechanism.webp" alt="Vintage Watch Mechanism" loading="lazy">
+                </div>
+                <div class="reveal-img-container story-collage-img img-2">
+                  <img src="assets/images/gallery_service.webp" alt="Watch Craftsmanship & Restoration" loading="lazy">
+                </div>
+                <div class="reveal-img-container story-collage-img img-3">
+                  <img src="assets/images/luxury_watch_detail.webp" alt="Luxury Watch Detail" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Editorial Text -->
+            <div class="story-text-col">
+              <span class="section-tag reveal-text-opacity" style="color: var(--gold);">Our Heritage</span>
+              <h2 class="section-title reveal-text-opacity" style="margin-bottom: 1rem; line-height: 1.2;">Modern Radios</h2>
+              <p class="story-subtitle reveal-text-opacity" style="color: var(--gold-text); font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 2rem;">Serving Customers Since 1967</p>
+              <p class="story-description reveal-text-opacity" style="color: var(--gray-text); line-height: 1.8; font-weight: 300; margin-bottom: 3rem;">
+                A legacy built on trust, craftsmanship, quality, and generations of customer relationships.
+              </p>
+
+              <!-- Luxury Timeline Element -->
+              <div class="story-timeline-minimal reveal-text-opacity" style="transition-delay: 0.1s;">
+                <div class="timeline-milestone">
+                  <span class="milestone-year">1967</span>
+                  <span class="milestone-label">Genesis</span>
+                </div>
+                <div class="timeline-divider"></div>
+                <div class="timeline-milestone">
+                  <span class="milestone-year">1990s</span>
+                  <span class="milestone-label">Horology</span>
+                </div>
+                <div class="timeline-divider"></div>
+                <div class="timeline-milestone">
+                  <span class="milestone-year">Today</span>
+                  <span class="milestone-label">Aiden &amp; Austin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           5. WATCH CATEGORIES
+           ========================================== -->
+      <section id="categories">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Curation</span>
+          <h2 class="section-title reveal-text-opacity">Watch Categories</h2>
+          
+          <div class="grid grid-3 categories-grid">
+            <!-- Analog Watches -->
+            <div class="category-card reveal-text-opacity" id="cat-analog">
+              <div class="category-card-inner">
+                <div class="category-icon-wrap">
+                  <svg class="category-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                    <line x1="12" y1="2" x2="12" y2="4"/>
+                    <line x1="12" y1="20" x2="12" y2="22"/>
+                    <line x1="2" y1="12" x2="4" y2="12"/>
+                    <line x1="20" y1="12" x2="22" y2="12"/>
+                  </svg>
+                </div>
+                <h3 class="category-name">Analog Watches</h3>
+                <p class="category-desc">Elegant traditional timepieces crafted for timeless style, mechanical accuracy, and classic chronographs.</p>
+              </div>
+            </div>
+
+            <!-- Digital Watches -->
+            <div class="category-card reveal-text-opacity" id="cat-digital">
+              <div class="category-card-inner">
+                <div class="category-icon-wrap">
+                  <svg class="category-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <rect x="3" y="4" width="18" height="16" rx="2" ry="2"/>
+                    <path d="M7 12h2v2H7z M11 12h2v2h-2z M15 12h2v2h-2z"/>
+                    <line x1="6" y1="8" x2="18" y2="8"/>
+                  </svg>
+                </div>
+                <h3 class="category-name">Digital Watches</h3>
+                <p class="category-desc">Modern functionality combined with contemporary designs, retro displays, and robust durability.</p>
+              </div>
+            </div>
+
+            <!-- Smart Watches -->
+            <div class="category-card reveal-text-opacity" id="cat-smart">
+              <div class="category-card-inner">
+                <div class="category-icon-wrap">
+                  <svg class="category-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <rect x="6" y="3" width="12" height="18" rx="3" ry="3"/>
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 9a3 3 0 0 1 3 3"/>
+                    <line x1="9" y1="3" x2="15" y2="3"/>
+                    <line x1="9" y1="21" x2="15" y2="21"/>
+                  </svg>
+                </div>
+                <h3 class="category-name">Smart Watches</h3>
+                <p class="category-desc">Advanced technology combined with premium aesthetics, active health trackers, and smart connectivity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           6. SMART WATCH COLLECTIONS
+           ========================================== -->
+      <section id="collections">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Wearable Tech</span>
+          <h2 class="section-title reveal-text-opacity">Smart Watch Collections</h2>
+          
+          <div class="collection-grid">
+            <!-- boAt -->
+            <div class="collection-card reveal-text-opacity" id="col-boat">
+              <div class="collection-img-wrap">
+                <img src="assets/images/boat_smartwatch.webp" alt="boAt Smartwatches" class="collection-img" loading="lazy">
+              </div>
+              <div class="collection-overlay">
+                <h3 class="collection-brand">boAt</h3>
+                <span class="collection-meta">Connected Technology & Fitness</span>
+              </div>
+            </div>
+
+            <!-- Fastrack -->
+            <div class="collection-card reveal-text-opacity" id="col-fastrack-smart">
+              <div class="collection-img-wrap">
+                <img src="assets/images/fastrack_smartwatch.webp" alt="Fastrack Smartwatches" class="collection-img" loading="lazy">
+              </div>
+              <div class="collection-overlay">
+                <h3 class="collection-brand">Fastrack</h3>
+                <span class="collection-meta">Youthful Design & Connectivity</span>
+              </div>
+            </div>
+
+            <!-- Titan -->
+            <div class="collection-card reveal-text-opacity" id="col-titan-smart">
+              <div class="collection-img-wrap">
+                <img src="assets/images/titan_smartwatch.webp" alt="Titan Smartwatches" class="collection-img" loading="lazy">
+              </div>
+              <div class="collection-overlay">
+                <h3 class="collection-brand">Titan</h3>
+                <span class="collection-meta">Premium Craft Meets Smart Tech</span>
+              </div>
+            </div>
+
+            <!-- Timex -->
+            <div class="collection-card reveal-text-opacity" id="col-timex-smart">
+              <div class="collection-img-wrap">
+                <img src="assets/images/timex_smartwatch.webp" alt="Timex Smartwatches" class="collection-img" loading="lazy">
+              </div>
+              <div class="collection-overlay">
+                <h3 class="collection-brand">Timex</h3>
+                <span class="collection-meta">Heritage Durability, Smart Fit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           5. KIDS WATCH COLLECTION
+           ========================================== -->
+      <section id="kids" style="background-color: var(--bg-dark);">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Youth &amp; Style</span>
+          <h2 class="section-title reveal-text-opacity">Kids Watch Collection</h2>
+          
+          <div class="grid grid-2 kids-layout">
+            <div class="kids-image-col">
+              <div class="kids-image-wrap reveal-img-container" id="kids-img-wrap">
+                <img src="assets/images/kids_collection.webp" alt="Kids Watch Collections" class="kids-img" loading="lazy">
+              </div>
+            </div>
+            <div class="kids-text-col">
+              <h3 class="kids-title reveal-text-opacity">Vibrant, Durable &amp; Fun</h3>
+              <p class="kids-desc reveal-text-opacity">We believe styling starts early. Explore our vibrant, highly durable, and water-resistant collection for kids. Featuring active designs built to withstand playground adventures.</p>
+              
+              <div class="kids-brands-list">
+                <div class="kids-brand-card reveal-text-opacity">
+                  <span class="kids-brand-name-sub" style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); display: block; margin-bottom: 0.25rem;">Tees</span>
+                  <p class="kids-brand-desc" style="font-size: 0.85rem; color: var(--gray-text); line-height: 1.5;">Fashionable digital watches for active youngsters.</p>
+                </div>
+                <div class="kids-brand-card reveal-text-opacity" style="transition-delay: 0.1s;">
+                  <span class="kids-brand-name-sub" style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); display: block; margin-bottom: 0.25rem;">Zoop</span>
+                  <p class="kids-brand-desc" style="font-size: 0.85rem; color: var(--gray-text); line-height: 1.5;">Vibrant, colorful analog watches by Titan.</p>
+                </div>
+                <div class="kids-brand-card reveal-text-opacity" style="transition-delay: 0.2s;">
+                  <span class="kids-brand-name-sub" style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); display: block; margin-bottom: 0.25rem;">TMX</span>
+                  <p class="kids-brand-desc" style="font-size: 0.85rem; color: var(--gray-text); line-height: 1.5;">Durable, classic watches for junior styles.</p>
+                </div>
+                <div class="kids-brand-card reveal-text-opacity" style="transition-delay: 0.3s;">
+                  <span class="kids-brand-name-sub" style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); display: block; margin-bottom: 0.25rem;">Tickit</span>
+                  <p class="kids-brand-desc" style="font-size: 0.85rem; color: var(--gray-text); line-height: 1.5;">Playful dials and designs for early time learning.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           6. CLOCK COLLECTIONS
+           ========================================== -->
+      <section id="clocks">
+        <div class="container">
+          <div class="clocks-redesign-layout">
+            <!-- Left: Hero Clock Image -->
+            <div class="clocks-hero-col">
+              <div class="clock-hero-img-wrap reveal-img-container" id="clocks-hero-wrap">
+                <img src="assets/images/hero_clock.webp" alt="Premium Vintage Wall Clock" class="clock-hero-img" loading="lazy">
+              </div>
+            </div>
+            
+            <!-- Right: Content & Brands -->
+            <div class="clocks-brands-col">
+              <span class="section-tag reveal-text-opacity">Interior Aesthetics</span>
+              <h2 class="section-title reveal-text-opacity">Clock Collections</h2>
+              <p class="clocks-desc-text reveal-text-opacity">
+                Curating timeless elegance for luxury spaces. Discover silent quartz, contemporary minimalist layouts, and traditional chimes from leading manufacturers.
+              </p>
+              
+              <div class="clock-brands-list">
+                <!-- Ajanta -->
+                <div class="glass-card clock-brand-card reveal-text-opacity">
+                  <h4 class="clock-brand-name">Ajanta</h4>
+                  <p class="clock-brand-desc">Classic quartz and digital wall clocks. India's legacy name in home timekeeping.</p>
+                </div>
+                <!-- Sage -->
+                <div class="glass-card clock-brand-card reveal-text-opacity" style="transition-delay: 0.1s;">
+                  <h4 class="clock-brand-name">Sage</h4>
+                  <p class="clock-brand-desc">Sleek, silent sweeping minimalist wall frames engineered for modern interiors.</p>
+                </div>
+                <!-- Rikon -->
+                <div class="glass-card clock-brand-card reveal-text-opacity" style="transition-delay: 0.2s;">
+                  <h4 class="clock-brand-name">Rikon</h4>
+                  <p class="clock-brand-desc">Premium clockcraft with traditional pendulum chimes and elegant wood-finish cases.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           7. PERFUME COLLECTION
+           ========================================== -->
+      <section id="perfumes" style="background-color: var(--bg-dark); position: relative;">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Fragrance</span>
+          <h2 class="section-title reveal-text-opacity">Perfume Collection</h2>
+          
+          <div class="showcase-row" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 5rem; align-items: center;">
+            <div class="showcase-image-col">
+              <div class="showcase-image-wrap reveal-img-container" id="perfume-img-wrap" style="height: 500px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05);">
+                <img src="assets/images/perfume_collection.webp" alt="Premium Perfume Collection" class="showcase-img" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              </div>
+            </div>
+            <div class="showcase-text-col">
+              <span class="showcase-num reveal-text-opacity">LUXURY FRAGRANCE</span>
+              <h3 class="showcase-title reveal-text-opacity" style="font-size: 2.5rem; text-transform: uppercase; margin-bottom: 1.5rem;">Skinn &amp; Fastrack Perfumes</h3>
+              <p class="showcase-desc reveal-text-opacity" style="color: var(--gray-text); font-weight: 300; line-height: 1.7; margin-bottom: 2rem;">Elevate your daily presence with our curated collection of premium perfumes. Featuring **Skinn by Titan** (crafted by French master perfumers) and **Fastrack Perfumes** (crafted for energetic, vibrant youth). Long-lasting sillage, exquisite notes, and premium bottles.</p>
+              
+              <div class="perfume-features reveal-text-opacity" style="margin-top: 2rem; display: flex; gap: 2.5rem;">
+                <div>
+                  <h4 style="font-family: var(--font-serif); color: var(--gold); font-size: 1.2rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Skinn by Titan</h4>
+                  <p style="font-size: 0.85rem; color: var(--gray-text); line-height: 1.4;">French crafted luxury EDP sprays for men and women.</p>
+                </div>
+                <div>
+                  <h4 style="font-family: var(--font-serif); color: var(--gold); font-size: 1.2rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Fastrack</h4>
+                  <p style="font-size: 0.85rem; color: var(--gray-text); line-height: 1.4;">Energetic, modern pocket and bottle scents for youth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           8. EMI FINANCING SECTION
+           ========================================== -->
+      <section id="emi">
+        <div class="container">
+          <div class="glass-card-gold emi-card reveal-text-opacity" style="padding: 4rem; border-radius: 16px; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; right: 0; opacity: 0.03; font-family: var(--font-serif); font-size: 15rem; font-weight: 700; pointer-events: none; line-height: 1;">EMI</div>
+            
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+              <div>
+                <span class="section-tag" style="color: var(--white-muted);">Financing Available</span>
+                <h2 style="font-size: 2.8rem; text-transform: uppercase; margin-bottom: 1.5rem; line-height: 1.2;">Easy EMI Facility Through Bajaj Finance</h2>
+                <p style="color: var(--white-muted); font-weight: 300; font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">Bring home your favorite luxury watch, smart wearable, or clock immediately. With our premium tie-up with Bajaj Finance, enjoy zero or low-interest financing options at checkout.</p>
+                
+                <div class="magnetic-btn-wrap">
+                  <a href="#contact" class="btn btn-primary magnetic-btn" id="emi-btn-contact">Inquire EMI Options</a>
+                </div>
+              </div>
+              
+              <div class="emi-features-list" style="display: flex; flex-direction: column; gap: 2rem;">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                  <div style="width: 48px; height: 48px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg style="width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 2;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div>
+                    <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.25rem; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em;">Instant Approval Assistance</h4>
+                    <p style="font-size: 0.9rem; color: var(--white-muted); font-weight: 300; line-height: 1.5;">Quick processing done on-spot at our showrooms so you don't have to wait.</p>
+                  </div>
+                </div>
+                
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                  <div style="width: 48px; height: 48px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg style="width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 2;" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  </div>
+                  <div>
+                    <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.25rem; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em;">Flexible EMI Options</h4>
+                    <p style="font-size: 0.9rem; color: var(--white-muted); font-weight: 300; line-height: 1.5;">Choose monthly installment plans tailored to your financial comfort.</p>
+                  </div>
+                </div>
+                
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                  <div style="width: 48px; height: 48px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg style="width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 2;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </div>
+                  <div>
+                    <h4 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.25rem; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em;">Easy Documentation</h4>
+                    <p style="font-size: 0.9rem; color: var(--white-muted); font-weight: 300; line-height: 1.5;">Minimal verification documents required for hassle-free approval.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands Wall removed in favor of premium brand grids -->
+
+      <!-- ==========================================
+           6. SERVICES SECTION
+           ========================================== -->
+      <section id="services">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Craftsmanship</span>
+          <h2 class="section-title reveal-text-opacity">Expert Services</h2>
+
+          <div class="grid grid-3 services-grid">
+            <!-- Watch Repair -->
+            <div class="glass-card service-card reveal-text-opacity" id="service-repair">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+              <h3 class="service-title">Watch Repair</h3>
+              <p class="service-desc">Precision mechanical and quartz repair using swiss-grade instruments to calibrate accuracy.</p>
+            </div>
+
+            <!-- Battery Replacement -->
+            <div class="glass-card service-card reveal-text-opacity" id="service-battery">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="2" y="7" width="16" height="10" rx="2" ry="2"/>
+                <line x1="22" y1="11" x2="22" y2="13"/>
+                <line x1="6" y1="12" x2="10" y2="12"/>
+                <line x1="8" y1="10" x2="8" y2="14"/>
+              </svg>
+              <h3 class="service-title">Battery Replacement</h3>
+              <p class="service-desc">High-grade silver-oxide battery replacement with pressure testing for waterproof watches.</p>
+            </div>
+
+            <!-- Strap Replacement -->
+            <div class="glass-card service-card reveal-text-opacity" id="service-strap">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M6 3h12v3H6zm0 15h12v3H6zm3-12h6v12H9z"/>
+              </svg>
+              <h3 class="service-title">Strap Replacement</h3>
+              <p class="service-desc">Genuine leather straps, luxury steel bracelets, and silicone sport straps fitted on-site.</p>
+            </div>
+
+            <!-- Watch Servicing -->
+            <div class="glass-card service-card reveal-text-opacity" id="service-servicing">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <h3 class="service-title">Watch Servicing</h3>
+              <p class="service-desc">Complete mechanism overhaul, chemical cleaning, re-oiling, and multi-day precision testing.</p>
+            </div>
+
+            <!-- Clock Repair -->
+            <div class="glass-card service-card reveal-text-opacity" id="service-clock">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 4v6l4 2"/>
+              </svg>
+              <h3 class="service-title">Clock Repair</h3>
+              <p class="service-desc">Repair and restoration of luxury wall clocks, vintage grandfather clocks, and mechanical pendulums.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Showroom Gallery removed to simplify visual flow -->
+
+      <!-- ==========================================
+           10. LOCATION EXPERIENCE
+           ========================================== -->
+      <section id="locations">
+        <div class="container">
+          <span class="section-tag reveal-text-opacity">Destination</span>
+          <h2 class="section-title reveal-text-opacity">Visit Our Showrooms</h2>
+
+          <div class="locations-grid">
+            <!-- Pulpally (Main) -->
+            <div class="glass-card location-card reveal-text-opacity" id="loc-pulpally">
+              <span class="flagship-badge">Main Showroom</span>
+              <h3 class="location-title">Aiden &amp; Austin Watches</h3>
+              <span class="location-branch">Pulpally, Wayanad</span>
+              
+              <div class="location-info">
+                <p>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <a href="https://maps.app.goo.gl/srcnLJK8KpXRpPwJ8?g_st=ac" target="_blank" class="address-link">Near Canara Bank, Pulpally, Wayanad, Kerala – 673579</a>
+                </p>
+                <p>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <a href="tel:+919207166135" class="location-link">+91 92071 66135</a> <span style="color: rgba(255,255,255,0.15);">|</span> <a href="tel:+917902421203" class="location-link">+91 79024 21203</a>
+                </p>
+                <p>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Mon - Sat: 9:00 AM - 8:30 PM
+                </p>
+              </div>
+              <!-- Maps Integration -->
+              <div class="location-actions">
+                <div class="magnetic-btn-wrap" style="width: 100%;">
+                  <a href="https://maps.app.goo.gl/srcnLJK8KpXRpPwJ8?g_st=ac" target="_blank" class="btn btn-outline magnetic-btn" id="btn-map-pulpally" style="width: 100%;">Get Directions</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mananthavady (Branch) -->
+            <div class="glass-card-gold location-card reveal-text-opacity" id="loc-mananthavady">
+              <span class="flagship-badge">Heritage Flagship</span>
+              <h3 class="location-title">Modern Radios</h3>
+              <span class="location-branch">Mananthavady, Wayanad</span>
+              
+              <div class="location-info">
+                <p>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <a href="https://maps.app.goo.gl/RPuJ9HguWTiHJ8sn8?g_st=ac" target="_blank" class="address-link">Calicut Road, Mananthavady, Wayanad, Kerala – 670645</a>
+                </p>
+                <p>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <a href="tel:+919207166135" class="location-link">+91 92071 66135</a>
+                </p>
+                <p>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Mon - Sat: 9:00 AM - 8:30 PM
+                </p>
+                <span class="heritage-label">Serving Customers Since 1967</span>
+              </div>
+
+              <!-- Maps Integration -->
+              <div class="location-actions">
+                <div class="magnetic-btn-wrap" style="width: 100%;">
+                  <a href="https://maps.app.goo.gl/RPuJ9HguWTiHJ8sn8?g_st=ac" target="_blank" class="btn btn-primary magnetic-btn" id="btn-map-mananthavady" style="width: 100%;">Get Directions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           11. CONTACT EXPERIENCE
+           ========================================== -->
+      <section id="contact">
+        <div class="container contact-layout">
+          
+          <div class="contact-info-col">
+            <span class="section-tag reveal-text-opacity">Acquisition</span>
+            <h3 class="reveal-text-opacity">Begin Your Consultation</h3>
+            <p class="reveal-text-opacity">Have a question about a watch brand, custom wall clocks, or perfumes? Get in touch with our showrooms. We are here to guide you.</p>
+            
+            <div class="contact-methods">
+              <!-- Showroom Location -->
+              <div style="margin-bottom: 1rem;">
+                <h4 style="font-family: var(--font-serif); font-size: 1.2rem; color: var(--gold); margin-bottom: 0.5rem; text-transform: uppercase;">Aiden &amp; Austin Watches</h4>
+                <p style="font-size: 0.9rem; color: var(--white-muted); font-weight: 300; line-height: 1.5;">
+                  <a href="https://maps.app.goo.gl/srcnLJK8KpXRpPwJ8?g_st=ac" target="_blank" class="address-link" style="color: inherit; text-decoration: none;">Near Canara Bank, Pulpally, Wayanad – 673579</a>
+                </p>
+              </div>
+
+              <!-- Flagship Location -->
+              <div style="margin-bottom: 2rem; border-left: 2px solid var(--gold); padding-left: 1rem;">
+                <h4 style="font-family: var(--font-serif); font-size: 1.2rem; color: var(--white); margin-bottom: 0.25rem; text-transform: uppercase;">Modern Radios</h4>
+                <span style="font-size: 0.75rem; color: var(--gold-text); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">Serving Customers Since 1967</span>
+                <p style="font-size: 0.9rem; color: var(--white-muted); font-weight: 300; line-height: 1.5;">
+                  <a href="https://maps.app.goo.gl/RPuJ9HguWTiHJ8sn8?g_st=ac" target="_blank" class="address-link" style="color: inherit; text-decoration: none;">Calicut Road, Mananthavady – 670645</a>
+                </p>
+              </div>
+
+              <!-- Call -->
+              <div class="contact-method reveal-text-opacity" id="contact-call">
+                <div class="contact-method-icon-wrap">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Call Now</div>
+                  <a href="tel:+919207166135" class="contact-method-value" id="link-phone-call">+91 92071 66135</a>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-method reveal-text-opacity" id="contact-whatsapp">
+                <div class="contact-method-icon-wrap">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">WhatsApp Chat</div>
+                  <a href="https://wa.me/919207166135" target="_blank" class="contact-method-value" id="link-whatsapp-chat">Chat on WhatsApp</a>
+                </div>
+              </div>
+
+              <!-- Email Info -->
+              <div class="contact-method reveal-text-opacity" id="contact-email">
+                <div class="contact-method-icon-wrap">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Email Support</div>
+                  <a href="mailto:aidenaustinply@gmail.com" class="contact-method-value" id="link-email-support">aidenaustinply@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="contact-method reveal-text-opacity" id="contact-socials">
+                <div class="contact-method-icon-wrap">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Follow Us</div>
+                  <div class="contact-method-social-links">
+                    <a href="https://www.facebook.com/share/1B6WhCLJtP/" target="_blank" rel="noopener noreferrer" class="contact-social-link">Facebook</a>
+                    <span style="color: rgba(255,255,255,0.2); margin: 0 0.5rem;">|</span>
+                    <a href="https://www.instagram.com/aidenandaustin_?igsh=bnZ1cjFldmVtM3Rt" target="_blank" rel="noopener noreferrer" class="contact-social-link">Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card-gold contact-form-col reveal-text-opacity" id="contact-form-container">
+            <form id="showroom-inquiry-form" action="#">
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder=" " required autocomplete="name">
+                <label for="form-name" class="form-label">Full Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="form-phone" class="form-input" placeholder=" " required autocomplete="tel">
+                <label for="form-phone" class="form-label">Phone Number</label>
+              </div>
+
+              <div class="form-group">
+                <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                <label for="form-message" class="form-label">Your Message or Inquiry Details</label>
+              </div>
+
+              <div class="magnetic-btn-wrap" style="width: 100%; margin-top: 1.5rem;">
+                <button type="submit" class="btn btn-primary magnetic-btn" id="form-submit-btn" style="width: 100%;">Submit Inquiry</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================
+           12. FOOTER
+           ========================================== -->
+      <footer class="footer">
+        <div class="container">
+          
+          <div class="footer-main">
+            <!-- Brand Column -->
+            <div class="footer-brand-col">
+              <img src="assets/images/logo.png" alt="Aiden &amp; Austin Watches" class="footer-logo-img">
+              <p>Aiden &amp; Austin Watches offers a curated selection of premium watches, smartwatches, clocks, and perfumes, combined with world-class repair services in Pulpally and Mananthavady, Wayanad. Our Modern Radios branch has proudly served customers since 1967.</p>
+              
+              <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1B6WhCLJtP/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/aidenandaustin_?igsh=bnZ1cjFldmVtM3Rt" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://wa.me/919207166135" target="_blank" class="footer-social-link" aria-label="WhatsApp">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h5 class="footer-col-title">Showroom</h5>
+              <ul class="footer-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#featured-brands">Featured Brands</a></li>
+                <li><a href="#categories">Collections</a></li>
+                <li><a href="#services">Services &amp; EMI</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+              <h5 class="footer-col-title">Services</h5>
+              <ul class="footer-links">
+                <li><a href="#services">Watch Repair</a></li>
+                <li><a href="#services">Battery &amp; Strap</a></li>
+                <li><a href="#services">Full Overhaul</a></li>
+                <li><a href="#emi">EMI Finance</a></li>
+              </ul>
+            </div>
+
+            <!-- Branches -->
+            <div>
+              <h5 class="footer-col-title">Locations</h5>
+              <ul class="footer-links">
+                <li><a href="#locations">Pulpally, Wayanad</a></li>
+                <li><a href="#locations">Mananthavady, Wayanad</a></li>
+                <li><a href="#contact">Inquiries</a></li>
+                <li><a href="tel:+919207166135">Support: +91 92071 66135</a></li>
+                <li><a href="https://wa.me/919207166135" target="_blank">WhatsApp Support</a></li>
+              </ul>        </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div class="footer-bottom">
+            <span class="footer-copy">&copy; 2026 Aiden &amp; Austin Watches. All rights reserved.</span>
+            <span class="footer-credits"><a href="https://technexttechnologies.in" target="_blank" class="technext-link">Conceptualised by Technext</a></span>
+          </div>
+
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- ==========================================
+       JAVASCRIPT SCRIPTS
+       ========================================== -->
+  <!-- 1. Three.js for 3D graphics -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  
+  <!-- 2. GSAP Core -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  
+  <!-- 3. GSAP ScrollTrigger Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  
+  <!-- 4. Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.24/dist/lenis.min.js"></script>
+  
+  <!-- 5. SplitType for text reveals -->
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+  
+  <!-- 6. Custom JS Modules -->
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/magnetic.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/cinematic.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+  
+  <!-- Floating WhatsApp Support Button -->
+  <a href="https://wa.me/919207166135?text=Hello%20Aiden%20%26%20Austin%20Watches%2C%20I%20would%20like%20to%20enquire%20about%20your%20products%2Fservices." 
+     target="_blank" 
+     class="floating-whatsapp-btn" 
+     aria-label="Chat on WhatsApp">
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.39 1.97 13.911.945 11.282.945c-5.447 0-9.87 4.372-9.874 9.802-.001 1.716.463 3.39 1.34 4.869l-.997 3.644 3.738-.971c1.478.804 3.097 1.229 4.558 1.23zM17.01 13.9c-.277-.139-1.64-.81-1.894-.902-.254-.093-.44-.139-.626.139-.186.278-.72.902-.882 1.088-.162.186-.324.208-.601.069-.277-.139-1.17-.431-2.228-1.374-.824-.735-1.38-1.644-1.542-1.921-.162-.277-.017-.427.121-.565.125-.124.277-.324.416-.486.139-.162.186-.277.278-.463.093-.185.046-.347-.023-.486-.069-.139-.626-1.505-.858-2.062-.226-.543-.454-.469-.626-.478-.162-.008-.347-.01-.532-.01-.186 0-.487.07-.742.347-.255.278-.974.95-.974 2.315 0 1.366.993 2.686 1.132 2.871.139.186 1.954 2.984 4.733 4.184.661.286 1.178.456 1.58.583.665.21 1.27.18 1.748.109.533-.08 1.639-.67 1.871-1.319.231-.648.231-1.204.162-1.319-.069-.115-.254-.185-.532-.324z"/>
+    </svg>
+    <span class="wa-pulse"></span>
+  </a>
+
+</body>
+</html>
