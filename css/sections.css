@@ -435,29 +435,24 @@
   background-color: var(--bg-dark);
 }
 
-.showcase-row {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 5rem;
-  align-items: center;
-  margin-bottom: 8rem;
-}
-
-.showcase-row:nth-child(even) {
-  grid-template-columns: 0.8fr 1.2fr;
-}
-
-.showcase-row:nth-child(even) .showcase-image-col {
-  order: 2;
-}
-
-.showcase-row:nth-child(even) .showcase-text-col {
-  order: 1;
-}
-
-.showcase-row:last-child {
-  margin-bottom: 0;
-}
+  .showcase-row {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .showcase-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .showcase-row:nth-child(even) .showcase-image-col {
+    order: 2;
+  }
+  .showcase-row:nth-child(even) .showcase-text-col {
+    order: 1;
+  }
+  .showcase-row:last-child {
+    margin-bottom: 0;
+  }
 
 .showcase-image-wrap {
   position: relative;
@@ -1957,6 +1952,25 @@ textarea.form-input {
     padding-top: 1.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  #perfumes .showcase-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #perfumes .showcase-image-col,
+  #perfumes .showcase-text-col {
+    width: 100%;
+  }
+  #perfumes .showcase-image-wrap {
+    height: auto;
+    max-height: 300px;
+  }
+  #perfumes .showcase-img {
+    object-fit: contain;
+  }
+}
+
 
 /* ==========================================================================
    17. EMI FINANCING SECTION (#emi)
