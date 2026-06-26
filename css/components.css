@@ -1,0 +1,416 @@
+/* Buttons, glassmorphism, navigation, custom cursor */
+
+/* 1. Glassmorphism Cards */
+.glass-card {
+  background: rgba(26, 26, 26, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+  transition: border-color var(--transition-medium), transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.glass-card:hover {
+  border-color: rgba(201, 169, 110, 0.3);
+  box-shadow: 0 15px 50px -10px rgba(201, 169, 110, 0.1);
+}
+
+/* Gold variant glass card */
+.glass-card-gold {
+  background: rgba(201, 169, 110, 0.04);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.glass-card-gold:hover {
+  border-color: rgba(201, 169, 110, 0.4);
+  box-shadow: 0 20px 50px rgba(201, 169, 110, 0.15);
+}
+
+/* 2. Premium Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background-color var(--transition-medium),
+              color var(--transition-medium),
+              border-color var(--transition-medium),
+              box-shadow var(--transition-medium);
+}
+
+.btn-primary {
+  background-color: var(--gold);
+  color: var(--bg-black);
+  border: 1px solid var(--gold);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--white);
+  box-shadow: 0 0 25px var(--gold-glow);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline:hover {
+  border-color: var(--gold);
+  color: var(--gold-text);
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.08);
+}
+
+/* Magnetic Button support class */
+.magnetic-btn-wrap {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* 3. Luxury Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 100;
+  transition: background-color var(--transition-medium), padding var(--transition-medium), border-bottom var(--transition-medium);
+  border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.nav-logo span {
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--gold);
+  transition: width var(--transition-medium);
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--white);
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger menu */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--white);
+  margin-bottom: 5px;
+  transition: transform var(--transition-medium), opacity var(--transition-medium);
+}
+
+.nav-toggle span:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: var(--bg-black);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 99;
+    transition: right var(--transition-slow);
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-cta {
+    display: none; /* Hide standard CTA, put inside side nav or keep simple */
+  }
+  
+  /* Menu icon animation */
+  .nav-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* 4. Custom Trailing Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: 50%;
+  background-color: var(--gold);
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--cursor-ring-size);
+  height: var(--cursor-ring-size);
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 110, 0.4);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+/* Cursor hover state */
+body.cursor-hover .custom-cursor {
+  width: calc(var(--cursor-size) * 2);
+  height: calc(var(--cursor-size) * 2);
+  background-color: var(--white);
+}
+
+body.cursor-hover .custom-cursor-ring {
+  width: calc(var(--cursor-ring-size) * 1.5);
+  height: calc(var(--cursor-ring-size) * 1.5);
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1024px) {
+  .custom-cursor, .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   5. FLOATING WHATSAPP BUTTON
+   ========================================================================== */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  transform: scale(0) translateY(50px);
+  color: #25D366;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform var(--transition-fast) cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color var(--transition-fast),
+              color var(--transition-fast),
+              background-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.floating-whatsapp-btn .wa-icon {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.6;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: scale(1.1) !important;
+  background-color: rgba(37, 211, 102, 0.22);
+  border-color: rgba(201, 169, 110, 0.8);
+  color: var(--gold-text);
+  box-shadow: 0 15px 35px rgba(201, 169, 110, 0.25);
+}
+
+/* Pulse Glow Effect */
+.wa-pulse {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  animation: waGlowPulse 2.2s infinite ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes waGlowPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    border-color: rgba(201, 169, 110, 0.3);
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-whatsapp-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
+  .floating-whatsapp-btn .wa-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Mobile Menu Socials Overlay */
+.mobile-menu-socials {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-socials {
+    display: block;
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mobile-socials-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .mobile-socials-wrap a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-text);
+    transition: border-color var(--transition-medium), color var(--transition-medium), transform var(--transition-medium), background-color var(--transition-medium);
+  }
+  
+  .mobile-socials-wrap a:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+    background-color: rgba(201, 169, 110, 0.05);
+  }
+  
+  .mobile-socials-wrap a .icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5px;
+  }
+}
+

@@ -1,0 +1,135 @@
+/* Custom CSS animations, transitions, and keyframes */
+
+/* 1. Standard Hover / Transitions */
+.transition-all {
+  transition: all var(--transition-medium);
+}
+
+/* 2. Keyframe Animations */
+
+/* Floating movement for decorative items */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ani-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Luxury glow pulse */
+@keyframes gold-pulse {
+  0% {
+    text-shadow: 0 0 10px rgba(201, 169, 110, 0.1);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(201, 169, 110, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(201, 169, 110, 0.1);
+  }
+}
+
+.ani-gold-pulse {
+  animation: gold-pulse 4s ease-in-out infinite;
+}
+
+/* Shimmer/reflection sweep animation */
+@keyframes shimmer-sweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #A8A8A8 25%, #FFFFFF 50%, #A8A8A8 75%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer-sweep 8s linear infinite;
+}
+
+/* Luxury rotating gear fallback */
+@keyframes spin-gear {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ani-spin-gear {
+  animation: spin-gear 20s linear infinite;
+}
+
+.ani-spin-gear-reverse {
+  animation: spin-gear 25s linear infinite reverse;
+}
+
+/* 3. GSAP / ScrollTrigger SplitType Base Styles */
+.line-mask {
+  overflow: hidden;
+  display: block;
+}
+
+.word-mask {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.reveal-text .char {
+  transform: translateY(100%);
+  display: inline-block;
+  will-change: transform;
+}
+
+.reveal-text-opacity {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* Scroll reveal image placeholder effect */
+.reveal-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-img-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-black);
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 1.2s var(--ease-premium);
+  z-index: 3;
+}
+
+.reveal-img-container.revealed::after {
+  transform: scaleY(0);
+}
+
+.reveal-img-container img {
+  transform: scale(1.15);
+  transition: transform 1.2s var(--ease-premium);
+}
+
+.reveal-img-container.revealed img {
+  transform: scale(1);
+}
