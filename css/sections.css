@@ -106,7 +106,7 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at center, rgba(10, 10, 10, 0.45) 0%, rgba(10, 10, 10, 0.95) 100%),
-              url('../public/assets/images/hero_watch.webp') no-repeat center center;
+              url('../assets/images/hero_watch.webp') no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }

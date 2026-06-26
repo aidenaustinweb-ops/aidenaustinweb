@@ -52,4 +52,12 @@ dirsToCopy.forEach(dir => {
   }
 });
 
+  // 5. Copy assets to dist/assets for clean URLs
+  const assetsSrc = path.join(__dirname, 'public', 'assets');
+  const assetsDest = path.join(distPath, 'assets');
+  if (fs.existsSync(assetsSrc)) {
+    fs.cpSync(assetsSrc, assetsDest, { recursive: true });
+    console.log('Copied assets to dist/assets for clean URLs');
+  }
+
 console.log('Build completed successfully!');
