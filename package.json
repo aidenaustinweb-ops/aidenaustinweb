@@ -1,0 +1,20 @@
+{
+  "name": "aiden-austin-watches",
+  "version": "1.0.0",
+  "description": "Premium luxury watch website for Aiden & Austin Watches",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "start": "sirv dist --port 3000 --cors --single"
+  },
+  "keywords": [
+    "luxury",
+    "watches",
+    "premium"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sirv-cli": "^3.0.0"
+  }
+}
