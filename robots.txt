@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aidenandaustinwatches.com/sitemap.xml
+Sitemap: https://aidenandaustin.in/sitemap.xml
